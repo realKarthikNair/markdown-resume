@@ -1,3 +1,11 @@
+So many Resume builders out there, but I wanted something that's
+
+- minimal and doesn't require a complex setup
+- requires just a text editor to edit the resume
+- a CLI command to generate the PDF
+
+This repo will now serve as a repo for my own resume (minus phone number) and of course the script to generate it. 
+
 # Markdown Resume to PDF Generator
 
 *Build, style, and export your resume using just a text editor and a single command.*
@@ -45,6 +53,12 @@ pip install markdown weasyprint
 1. Open `resume.md` in your favorite text editor (e.g., VSCode, Notepad, Vim).
 2. Update the content with your personal information, education, work experience, projects, skills, awards, and languages.
 3. Save the changes.
+
+> 💡 You might need to know Markdown syntax to customize the format. You can learn markdown in less than 10 minutes from [here](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
+
+### (optional) Edit CSS
+
+1. Open `style.css` to customize the appearance of your PDF.
 
 ### To generate the PDF:
 
