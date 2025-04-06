@@ -81,12 +81,7 @@ rem run with sanitization
 build.bat -i resume.md -o resume.pdf --sanitize true
 ```
 
-This script will:
-
-1. Run `sanitize.py` to clean `resume.md`
-2. Convert it into HTML with styles using `generate.py`
-3. Output `resume.pdf`
-4. Clean up temporary files
+> `sanitize` flag when true, builds the resume with phone number masked. This is useful if you want to share your resume publicly without exposing your phone number.
 
 ---
 
