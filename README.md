@@ -6,6 +6,8 @@ So many Resume builders out there, but I wanted something that's
 
 This repo will now serve as a repo for my own resume (minus phone number) and of course the script to generate it. 
 
+> ⚠️ This tool doesn't work on Windows yet. See #1
+
 # Markdown Resume to PDF Generator
 
 *Build, style, and export your resume using just a text editor and a single command.*
@@ -42,7 +44,7 @@ You can install them using pip:
 pip install markdown weasyprint
 ```
 
-> 💡 WeasyPrint may require additional system libraries like `libpango`, `cairo`, and `gdk-pixbuf` depending on your OS.
+> 💡 On Linux WeasyPrint may require additional system libraries like `libpango`, `cairo`, and `gdk-pixbuf` depending on your OS.
 
 ---
 
