@@ -9,7 +9,7 @@ Indira Gandhi National Open University | **Master of Computer Applications** (On
 
 VIPS, Guru Gobind Singh Indraprastha University New Delhi | **Bachelor of Computer Applications** (Data Science & Analytics) – 9.1 CGPA | 2021–2024
 ### WORK EXPERIENCE
-**Tata Consultancy Services, Noida** – AI Engineer | Aug 2023–Present 
+**Tata Consultancy Services, Noida** – AI Engineer | Aug 2024–Present 
 
 * Building intelligent systems for a US-based pharma client to automate document processing, data analysis, and graph generation using fine-tuned LLMs, FastAPI, LangChain, internal tools and cloud platforms. **It Reduced dataset analysis time by 90%, accelerating insights and drug discovery.**
 
