@@ -6,7 +6,7 @@ So many Resume builders out there, but I wanted something that's
 
 This repo will now serve as a repo for my own resume (minus phone number) and of course the script to generate it. 
 
-> ⚠️ This tool doesn't work on Windows yet. See #1
+> ⚠️ This tool doesn't work on Windows yet. See [#1](https://github.com/realKarthikNair/markdown-resume/issues/1)
 
 # Markdown Resume to PDF Generator
 
