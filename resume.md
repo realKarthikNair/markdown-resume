@@ -9,8 +9,9 @@ Indira Gandhi National Open University | **Master of Computer Applications** (On
 VIPS, Guru Gobind Singh Indraprastha University New Delhi | **Bachelor of Computer Applications** (Data Science & Analytics) – 9.1 CGPA | 2021–2024
 ### WORK EXPERIENCE
 **Tata Consultancy Services, Noida** – AI Engineer | Aug 2023–Present 
-* Building AI systems for a US-based pharma client to automate document processing, data analysis, and graph generation using fine-tuned LLMs, FastAPI, LangChain, internal tools and cloud platforms. .
-* Impact: Reduced dataset analysis time by 90%, accelerating insights and drug discovery.
+
+* Building AI systems for a US-based pharma client to automate document processing, data analysis, and graph generation using fine-tuned LLMs, FastAPI, LangChain, internal tools and cloud platforms. **It Reduced dataset analysis time by 90%, accelerating insights and drug discovery.**
+
 * **Tech**: Python | FastAPI | LangChain | Generative AI | Data Analytics | AWS | Azure
 ### PERSONAL and ACADEMIC PROJECTS
 * **EPP-systemd** – (Jul 2024–Present) : A customizable systemd service that automatically adjusts CPU energy performance preferences and display settings based on battery status and capacity. 
@@ -23,8 +24,7 @@ VIPS, Guru Gobind Singh Indraprastha University New Delhi | **Bachelor of Comput
 * **Non-Technical**: Content Writing, Video Editing (Davinci Resolve), Photography, Digital Marketing  
 * **Soft Skills**: Problem Solving, Teamwork, Adaptability, Critical Thinking, Time Management
 ### AWARDS
-- [Bug Bounty Cash Award from Google](https://realkarthiknair.github.io/CVE-2022-20317.html) | 2021 
-    - Security Research @ Google Buganizer for Android 12/13
+- [Bug Bounty Cash Award from Google Buganizer @ Android 12/13](https://realkarthiknair.github.io/CVE-2022-20317.html) | 2021 
 ### LANGUAGES
 * Professional Proficiency : English, Hindi
 * Native/Bilingual Proficiency : Malayalam

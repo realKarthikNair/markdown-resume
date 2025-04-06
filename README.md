@@ -40,11 +40,29 @@ pip install markdown weasyprint
 
 ## ⚙️ Usage
 
+### Edit your Resume
+
+1. Open `resume.md` in your favorite text editor (e.g., VSCode, Notepad, Vim).
+2. Update the content with your personal information, education, work experience, projects, skills, awards, and languages.
+3. Save the changes.
+
 ### To generate the PDF:
 
+1. Linux/macOS:
+   
 ```bash
 chmod +x build.sh
-./build.sh
+# run
+/build.sh -i resume_karthik.md -o resume_sanitized.pdf --sanitize true # false if you want to skip sanitization
+```
+
+2. Windows
+
+```
+rem run without sanitization
+build.bat -i resume.md -o resume.pdf
+rem run with sanitization
+build.bat -i resume.md -o resume.pdf --sanitize true
 ```
 
 This script will:

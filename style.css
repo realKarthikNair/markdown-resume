@@ -1,20 +1,25 @@
 @page {
-    margin: 0.5cm;
+    margin: 1cm;
+    /* Increased and uniform page margin */
 }
 
 body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
     font-size: 14px;
-    line-height: 1.6;
-    margin: 0.5cm;
+    line-height: 1.5;
+    margin: 1cm;
+    /* Increased and uniform body margin */
     color: #333;
 }
 
 h2,
 h3 {
-    margin-top: 1.2em;
+    margin-top: 1em;
+    /* Adjusted top margin for headings */
+    margin-bottom: 0.6em;
+    /* Adjusted bottom margin for headings */
     color: #222;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 h1,
@@ -25,21 +30,26 @@ h3 {
 
 p {
     margin: 0.5em 0;
+    /* Adjusted paragraph margin */
 }
 
 ul {
-    padding-left: 1.25em;
+    padding-left: 1.5em;
+    /* Adjusted padding for lists */
 }
 
 li {
-    margin-bottom: 0.4em;
+    margin-bottom: 0.3em;
+    /* Adjusted margin between list items */
 }
 
 blockquote {
     border-left: 4px solid #007acc;
     background: #f2f9ff;
     padding: 0.5em 1em;
-    margin: 1em 0;
+    /* Adjusted padding for blockquotes */
+    margin: 0.8em 0;
+    /* Adjusted blockquote margin */
     color: #555;
 }
 
@@ -59,5 +69,6 @@ strong {
 hr {
     border: none;
     border-top: 1px solid #ccc;
-    margin: 1.5em 0;
+    margin: 1em 0;
+    /* Adjusted margin for horizontal rules */
 }
