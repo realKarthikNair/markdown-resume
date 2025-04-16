@@ -42,12 +42,12 @@ fi
 if [[ "$SANITIZE" == "true" ]]; then
   SANITIZED="${INPUT%.md}_sanitized.md"
   echo "[*] Sanitizing $INPUT..."
-  python3 sanitize.py -i "$INPUT" -o "$SANITIZED"
+  python3 src/sanitize.py -i "$INPUT" -o "$SANITIZED"
   INPUT="$SANITIZED"
 fi
 
 echo "[*] Generating PDF..."
-./generate.py -i "$INPUT" -o "$OUTPUT"
+./src/generate.py -i "$INPUT" -o "$OUTPUT"
 
 if [[ "$SANITIZE" == "true" ]]; then
   echo "[*] Cleaning up sanitized file..."

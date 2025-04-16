@@ -16,21 +16,6 @@ This tool converts a Markdown resume (`resume.md`) into a styled PDF using HTML 
 
 ---
 
-## 📁 Project Structure
-
-```
-.
-├── build.sh             # Shell script to sanitize and generate PDF
-├── generate.py          # Main script to convert Markdown to PDF
-├── resume.md            # Input resume in Markdown format
-├── sanitize.py          # Script to clean/prepare the Markdown file
-├── style.css            # External CSS for styling the PDF
-├── style.html           # Base HTML template with placeholder for Markdown content
-├── README.md            # Project documentation (this file)
-```
-
----
-
 ## 🧩 Dependencies
 
 You must have Python 3 and the following packages installed:
@@ -52,15 +37,15 @@ pip install markdown weasyprint
 
 ### Edit your Resume
 
-1. Open `resume.md` in your favorite text editor (e.g., VSCode, Notepad, Vim).
+1. Open `docs/resume.md` in your favorite text editor (e.g., VSCode, Notepad, Vim).
 2. Update the content with your personal information, education, work experience, projects, skills, awards, and languages.
 3. Save the changes.
 
-> 💡 You might need to know Markdown syntax to customize the format. You can learn markdown in less than 10 minutes from [here](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
+> 💡 You might need to know Markdown syntax to customize the format. Read [this](./markdown_basics.pdf) to learn it in 4 minutes
 
 ### (optional) Edit CSS
 
-1. Open `style.css` to customize the appearance of your PDF.
+1. Open `src/style.css` to customize the appearance of your PDF.
 
 ### To generate the PDF:
 
@@ -69,16 +54,16 @@ pip install markdown weasyprint
 ```bash
 chmod +x build.sh
 # run
-/build.sh -i resume_karthik.md -o resume_sanitized.pdf --sanitize true # false if you want to skip sanitization
+/build.sh -i docs/resume.md -o docs/resume_sanitized.pdf --sanitize true # false if you want to skip sanitization
 ```
 
 2. Windows
 
 ```
 rem run without sanitization
-build.bat -i resume.md -o resume.pdf
+build.bat -i docs/resume.md -o docs/resume.pdf
 rem run with sanitization
-build.bat -i resume.md -o resume.pdf --sanitize true
+build.bat -i docs/resume.md -o docs/resume.pdf --sanitize true
 ```
 
 > `sanitize` flag when true, builds the resume with phone number masked. This is useful if you want to share your resume publicly without exposing your phone number.
@@ -87,9 +72,8 @@ build.bat -i resume.md -o resume.pdf --sanitize true
 
 ## 📝 Customization
 
-- **Edit `style.css`** to change how the PDF looks (fonts, margins, colors)
-- **Edit `style.html`** to customize the HTML structure
-- **Update `resume.md`** with your resume content in Markdown
+- **Edit `src/style.css`** to change how the PDF looks (fonts, margins, colors)
+- **Update `docs/resume.md`** with your resume content in Markdown
 
 ___
 

@@ -1,9 +1,8 @@
 ## **Karthik Nair**
 > Software/Data/FLOSS Enthusiast | AI Engineer
 
-New Delhi, India | +91 96436***** | [Email](mailto:realkarthiknair@gmail.com) | [Github](https://www.github.com/realKarthikNair) | [LinkedIn](https://linkedin.com/in/realkarthiknair/) | [Website](https://realkarthiknair.github.io)
-
-Developer with a passion for open-source and building impactful solutions. Skilled in Data Analytics, backend systems, and cloud. Known for adaptability, teamwork, and active hackathon participation during college. 
+New Delhi, India | +91 96436***** | [realkarthiknair@gmail.com](realkarthiknair@gmail.com) | [github.com/realKarthikNair](https://www.github.com/realKarthikNair) | [linkedin.com/in/realkarthiknair/](https://linkedin.com/in/realkarthiknair/) 
+ 
 ### EDUCATION  
 Indira Gandhi National Open University | **Master of Computer Applications** (Ongoing) | 2025–2027  
 
@@ -15,17 +14,17 @@ VIPS, Guru Gobind Singh Indraprastha University New Delhi | **Bachelor of Comput
 
 * **Tech**: Python | FastAPI | LangChain | Generative AI | Data Analytics | AWS | Azure
 ### PERSONAL and ACADEMIC PROJECTS
-* **EPP-systemd** – (Jul 2024–Present) : A customizable systemd service that automatically adjusts CPU energy performance preferences and display settings based on battery status and capacity. 
+* **markdown-resume (April 2025- Present)** : A markdown-based resume generator using CSS and WeasyPrint, designed for easy customization and professional results. **This resume was created with it.**
+* **EPP-systemd** – (Jul 2024– Present) : A customizable systemd service that automatically adjusts CPU energy performance preferences and display settings based on battery status and capacity. 
 
-* **SeniorSage** – (Jan 2024–Present) : AI platform offering resume reviews, GitHub analysis, and roadmap suggestions for CS students. 
+* **SeniorSage** – (Jan 2024– Present) : AI platform offering resume reviews, GitHub analysis, and roadmap suggestions for CS students. 
 
-* **Food-for-All** – (Aug 2023–Dec 2024) : A python-based app that connects restaurants and NGOs to combat the wastage of excessive food with a real-time database.
+* **Food-for-All** – (Aug 2023– Dec 2024) : A python-based app that connects restaurants and NGOs to combat the wastage of excessive food with a real-time database.
 ### SKILLS
 * **Technical**: Backend (FastAPI, Flask), Cloud (Azure, GCP), Python, C++, Bash, MySQL, Firestore, Git, Linux, Systemd, HTML, CSS, Web Scraping, Gen AI, Prompt Engineering, NLP, Shell Scripting, Platforms (Firebase, Vercel, Render)  
 * **Non-Technical**: Content Writing, Video Editing (Davinci Resolve), Photography, Digital Marketing  
 ### AWARDS
 - [Bug Bounty Cash Award from Google Buganizer @ Android 12/13](https://realkarthiknair.github.io/CVE-2022-20317.html) | 2021 
 ### LANGUAGES
-* Professional Proficiency : English, Hindi
-* Native/Bilingual Proficiency : Malayalam
+* Professional Proficiency : English, Hindi, Malayalam
 * Limited Working Proficiency : Tamil
