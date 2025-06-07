@@ -18,15 +18,10 @@ This tool converts a Markdown resume (`resume.md`) into a styled PDF using HTML 
 
 ## 🧩 Dependencies
 
-You must have Python 3 and the following packages installed:
-
-- `markdown`
-- `weasyprint`
-
-You can install them using pip:
+You must have Python 3 and `markdown` and `weasyprint` packages installed.
 
 ```bash
-pip install markdown weasyprint
+pip install -r requirements.txt
 ```
 
 > 💡 On Linux WeasyPrint may require additional system libraries like `libpango`, `cairo`, and `gdk-pixbuf` depending on your OS.
