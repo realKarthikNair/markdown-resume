@@ -1,12 +1,10 @@
-So many Resume builders out there, but I wanted something that's
+So many Resume builders out there, but I wanted something that
 
-- minimal and doesn't require a complex setup
 - requires just a text editor to edit the resume
+- could be customized easily through CSS
 - a CLI command to generate the PDF
 
 This repo will now serve as a repo for my own resume (minus phone number) and of course the script to generate it. 
-
-> ⚠️ This tool doesn't work on Windows yet. See [#1](https://github.com/realKarthikNair/markdown-resume/issues/1)
 
 # Markdown Resume to PDF Generator
 
@@ -16,7 +14,21 @@ This tool converts a Markdown resume (`resume.md`) into a styled PDF using HTML 
 
 ---
 
-## 🧩 Dependencies
+## 🧩 Setting up
+
+### Windows specific setup (mandatory)
+
+```
+curl -L https://github.com/msys2/msys2-installer/releases/download/2025-02-21/msys2-x86_64-20250221.exe -o mysys.exe
+```
+
+Run the installer and follow the instructions to install MSYS2.
+
+in MSYS2’s shell, execute `pacman -S mingw-w64-x86_64-pango`
+
+Close MSYS2’s shell.
+
+### Install Dependencies (all platforms)
 
 You must have Python 3 and `markdown` and `weasyprint` packages installed.
 
@@ -44,7 +56,7 @@ pip install -r requirements.txt
 
 ### To generate the PDF:
 
-1. Linux/macOS:
+1. Linux:
    
 ```bash
 chmod +x build.sh
@@ -56,9 +68,9 @@ chmod +x build.sh
 
 ```
 rem run without sanitization
-build.bat -i docs/resume.md -o docs/resume.pdf
+python .\build.py -i .\docs\resume.md -o .\docs\resume.pdf
 rem run with sanitization
-build.bat -i docs/resume.md -o docs/resume.pdf --sanitize true
+python .\build.py -i .\docs\resume.md -o .\docs\resume_sanitized.pdf --sanitize true
 ```
 
 > `sanitize` flag when true, builds the resume with phone number masked. This is useful if you want to share your resume publicly without exposing your phone number.
