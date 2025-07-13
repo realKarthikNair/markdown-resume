@@ -43,11 +43,11 @@ def main():
     if sanitize == "true":
         sanitized = f"{os.path.splitext(input_file)[0]}_sanitized.md"
         print(f"[*] Sanitizing {input_file}...")
-        subprocess.run(["python3", "src/sanitize.py", "-i", input_file, "-o", sanitized], check=True)
+        subprocess.run(["python", "src/sanitize.py", "-i", input_file, "-o", sanitized], check=True)
         input_file = sanitized
     
     print("[*] Generating PDF...")
-    subprocess.run(["./src/generate.py", "-i", input_file, "-o", output_file], check=True)
+    subprocess.run(["python", "src/generate.py", "-i", input_file, "-o", output_file], check=True)
     
     if sanitize == "true":
         print("[*] Cleaning up sanitized file...")
