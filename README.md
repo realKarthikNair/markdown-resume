@@ -48,7 +48,7 @@ pip install -r requirements.txt
 2. Update the content with your personal information, education, work experience, projects, skills, awards, and languages.
 3. Save the changes.
 
-> 💡 You might need to know Markdown syntax to customize the format. Read [this](./docs/markdown_basics.pdf) to learn it in 4 minutes
+> 💡 You might need to know Markdown syntax to customize the format. Read [this](./docs/markdown_basics.pdf) to learn it in 4 minutes. Custom markdown syntax is also documented.
 
 ### (optional) Edit CSS
 

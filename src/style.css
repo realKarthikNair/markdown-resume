@@ -1,35 +1,109 @@
 @page {
-    margin: 1cm;
+    margin: 0.8cm;
 }
 
 body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
-    font-size: 14px;
-    line-height: 1.5;
-    margin: 0.5cm;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 10px;
+    line-height: 1.4;
+    margin: 0.3cm;
     color: #333;
 }
 
-h2,
-h3 {
-    margin-top: 1em;
-    margin-bottom: 0.6em;
-    color: #222;
-    font-weight: 500;
+h1 {
+    font-size: 1.6em;
+    color: #007acc;
+    margin-top: 0;
 }
 
 h2 {
-    font-size: 2em;
+    font-size: 1.3em;
+    color: #007acc;
+}
+
+h3 {
+    font-size: 1.1em;
+    color: #444;
+}
+
+h4 {
+    font-size: 1.0em;
+    color: #222;
 }
 
 h1,
 h2,
-h3 {
+h3,
+h4 {
     line-height: 1.2;
+}
+
+h2,
+h3,
+h4 {
+    margin-top: 1em;
+    margin-bottom: 0.6em;
+    font-weight: 500;
 }
 
 p {
     margin: 0.5em 0;
+    position: relative;
+}
+
+/* Date styling and positioning */
+.date {
+    float: right;
+    font-style: normal;
+    font-weight: normal;
+    color: #666;
+}
+
+p>em:last-child {
+    position: absolute;
+    right: 0;
+    font-style: normal;
+    color: #666;
+}
+
+p>strong+em {
+    position: absolute;
+    right: 0;
+    font-style: normal;
+    color: #666;
+}
+
+li em:last-child {
+    display: block;
+    text-align: right;
+    font-style: normal;
+    margin-top: -1.4em;
+    color: #666;
+}
+
+li strong+em {
+    display: block;
+    text-align: right;
+    font-style: normal;
+    margin-top: -1.4em;
+    color: #666;
+}
+
+h4 em:last-child,
+h4 .date {
+    float: right;
+    font-style: normal;
+    font-weight: normal;
+    color: #666;
+}
+
+h4 {
+    position: relative;
+}
+
+/* Center content */
+center {
+    text-align: center;
 }
 
 ul {
@@ -38,6 +112,13 @@ ul {
 
 li {
     margin-bottom: 0.3em;
+    position: relative;
+}
+
+li strong+em+br {
+    display: block;
+    content: "";
+    margin-bottom: 0.5em;
 }
 
 blockquote {
@@ -46,7 +127,7 @@ blockquote {
     padding: 0.2em 0.6em;
     margin: 0.4em 0;
     color: #555;
-    font-size: 0.9em;
+    font-size: 0.8em;
 }
 
 a {
