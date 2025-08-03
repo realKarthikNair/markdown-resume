@@ -1,6 +1,6 @@
 # ::Karthik Nair::
 
-::New Delhi, India | [+91 96436*****](tel:+919 64366****)::
+::New Delhi, India | [+91 96436\*\*\*\*\*](tel:+919 64366\*\*\*\*)::
 
 ::[realkarthiknair@gmail.com](mailto:realkarthiknair@gmail.com) | [github.com/realKarthikNair](https://www.github.com/realKarthikNair) | [linkedin.com/in/realkarthiknair/](https://linkedin.com/in/realkarthiknair/)::
 
@@ -56,14 +56,14 @@
 ---
 
 ## SKILLS
-* Technical: Programming and scripting languages (Python, C++, Bash), Backend Development (FastAPI, Flask), Cloud Platforms (Azure, AWS, Vercel, Render), Database Management (MySQL, Firestore), Version Control (Git), Linux, Data Engineering and Analytics, Generative AI (Prompt Engineering, LangChain, LangGraph, RAG, API call optimisation)
+* Technical: Programming and scripting languages (Python, C++, Bash), Backend Development (FastAPI, Flask), Cloud Platforms (Azure, AWS, Vercel, Render), Database Management (MySQL, Firestore), Version Control (Git), Linux, Data Engineering and Analytics, Generative AI (Prompt Engineering, LangChain, LangGraph, RAG, API call optimisation), DevOps (CI/CD, Docker, Kubernetes, Jenkins), Data Visualisation (Matplotlib, Seaborn, Plotly), Data Processing (Pandas, NumPy), Web Scraping (BeautifulSoup, Scrapy), Machine Learning (Scikit-learn, TensorFlow, PyTorch), Natural Language Processing (spaCy, NLTK), Computer Vision (OpenCV)
 
 * Non-Technical: Content Writing, Video Editing (DaVinci Resolve), Photography, Digital Marketing
 
 ---
 
 ## AWARDS
-- [Technical Excellence Award from TCS](https://www.linkedin.com/posts/realkarthiknair_activity-733 92382**********8-PYLz) for outstanding contributions to AI projects | 2025  
+- [2x Technical Excellence Award from TCS](https://www.linkedin.com/posts/realkarthiknair_tcsgems-al-automation-activity-7357009079946416128-TOAc) for outstanding contributions to AI projects | 2025  
 - [Bug Bounty Award from Google Buganizer Android 12/13](https://realkarthiknair.github.io/CVE-2022-20317.html) | 2021 
 
 ---

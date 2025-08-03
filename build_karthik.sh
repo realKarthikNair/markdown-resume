@@ -1,3 +1,4 @@
-./build.sh -i docs/resume_karthik.md -o docs/resume_karthik.pdf --sanitize false
+./build.sh -i docs/resume_karthik.md -o docs/KarthikNair.pdf --sanitize false
+./io_push.sh #personal script to push unmasked resume to somewhere
 ./src/sanitize.py -i docs/resume_karthik.md -o docs/resume.md
-./build.sh -i docs/resume_karthik.md -o docs/resume_sanitized.pdf --sanitize true
+./build.sh -i docs/resume_karthik.md -o docs/KarthikNair_sanitized.pdf --sanitize true
