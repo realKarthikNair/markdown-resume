@@ -36,6 +36,7 @@ def read_markdown_file(path: str) -> str:
 
 
 def preprocess_markdown(md_text: str) -> str:
+
     """
     Preprocess markdown text to format dates for right alignment.
     
@@ -45,10 +46,25 @@ def preprocess_markdown(md_text: str) -> str:
     Returns:
         str: Processed markdown text with formatted dates
     """
+
+    # Format heading: '### Institution (Date Range)'
+    md_text = re.sub(r'(#+\s+[^\n(]+)\(([A-Za-z]+\s+[0-9]{4}\s*-\s*[A-Za-z]+\s+[0-9]{4}|[A-Za-z]+\s+[0-9]{4}\s*-\s*Present)\)',
+                     r'\1<span class="date">\2</span>',
+                     md_text)
+
+    # Format heading: '### Institution | University (Date Range)'
+    md_text = re.sub(r'(#+\s+[^|\n]+\|[^\n(]+)\(([A-Za-z]+\s+[0-9]{4}\s*-\s*[A-Za-z]+\s+[0-9]{4}|[A-Za-z]+\s+[0-9]{4}\s*-\s*Present)\)',
+                     r'\1<span class="date">\2</span>',
+                     md_text)
     # Convert ::text:: to <center>text</center>
     md_text = re.sub(r'::(.*?)::', r'<center>\1</center>', md_text, flags=re.DOTALL)
     
-    # Convert {text} to <u>text</u>
+    # Support headings like '#### {Personal Finance Tool} (July 2025 - Present)'
+    md_text = re.sub(r'(#+\s*)\{([^}]+)\}\s*\(([A-Za-z]+\s+[0-9]{4}\s*-\s*[A-Za-z]+(?:\s+[0-9]{4})?|[A-Za-z]+\s+[0-9]{4}\s*-\s*Present)\)',
+                     r'\1<u>\2</u> <span class="date">\3</span>',
+                     md_text)
+
+    # Convert all remaining {text} to <u>text</u>
     md_text = re.sub(r'\{(.*?)\}', r'<u>\1</u>', md_text, flags=re.DOTALL)
     
     # Format heading with project and date: "#### **Project Name** (July 2025 - Present)" -> "#### **Project Name** <span class="date">July 2025 - Present</span>"
@@ -108,6 +124,62 @@ def preprocess_markdown(md_text: str) -> str:
     
     # Format ISO dates: "2023-06-15" -> "<span class="date">2023-06-15</span>"
     md_text = re.sub(r'([0-9]{4}-[0-9]{2}-[0-9]{2})$', r'<span class="date">\1</span>', md_text, flags=re.MULTILINE)
+
+    # === Heading date patterns ===
+    heading_date_patterns = [
+        # ### Institution (Date Range)
+        (r'(#+\s+[^\n(]+)\(([A-Za-z]+\s+[0-9]{4}\s*-\s*[A-Za-z]+\s+[0-9]{4}|[A-Za-z]+\s+[0-9]{4}\s*-\s*Present)\)', r'\1<span class="date">\2</span>'),
+        # ### Institution | University (Date Range)
+        (r'(#+\s+[^|\n]+\|[^\n(]+)\(([A-Za-z]+\s+[0-9]{4}\s*-\s*[A-Za-z]+\s+[0-9]{4}|[A-Za-z]+\s+[0-9]{4}\s*-\s*Present)\)', r'\1<span class="date">\2</span>'),
+        # #### {Project Name} (Month Year - Present)
+        (r'(#+\s*)\{([^}]+)\}\s*\(([A-Za-z]+\s+[0-9]{4}\s*-\s*[A-Za-z]+(?:\s+[0-9]{4})?|[A-Za-z]+\s+[0-9]{4}\s*-\s*Present)\)', r'\1<u>\2</u> <span class="date">\3</span>'),
+        # #### **Project Name** (Month Year - Present)
+        (r'(#+\s*\*\*[^*]+\*\*)\s*\(([A-Za-z]+\s+[0-9]{4}\s*-\s*[A-Za-z]+(?:\s+[0-9]{4})?|[A-Za-z]+\s+[0-9]{4}\s*-\s*Present)\)', r'\1 <span class="date">\2</span>'),
+    ]
+    for pat, repl in heading_date_patterns:
+        md_text = re.sub(pat, repl, md_text)
+
+    # === Center and underline patterns ===
+    md_text = re.sub(r'::(.*?)::', r'<center>\1</center>', md_text, flags=re.DOTALL)
+    md_text = re.sub(r'\{(.*?)\}', r'<u>\1</u>', md_text, flags=re.DOTALL)
+
+    # === Inline and list date patterns ===
+    inline_date_patterns = [
+        # Dates after pipe in headings: "### Institution | Date Range"
+        (r'(#+\s+[^|]+)\|\s*([A-Za-z]+\s+[0-9]{4}\s*-\s*[A-Za-z]+(?:\s+[0-9]{4})?|[A-Za-z]+\s+[0-9]{4}\s*-\s*Present)', r'\1| <span class="date">\2</span>'),
+        # Project dates in list items: "* **Project Name** (Date Range): Description"
+        (r'(\* \*\*[^*]+\*\*)\s*\(([A-Za-z]+\s+[0-9]{4}\s*-\s*[A-Za-z]+(?:\s+[0-9]{4})?|[A-Za-z]+\s+[0-9]{4}\s*-\s*Present)\):', r'\1 <span class="date">\2</span>:'),
+        # Headings with multiple pipes: (for robustness)
+        (r'(#+\s+[^|]+(?:\|[^|]+)?)\|\s*([A-Za-z]+\s+[0-9]{4}\s*-\s*[A-Za-z]+\s+[0-9]{4}|[A-Za-z]+\s+[0-9]{4}\s*-\s*Present)', r'\1| <span class="date">\2</span>'),
+        # Year ranges with pipe separator
+        (r'\|\s*([0-9]{4}[-–][0-9]{4}|[0-9]{4}\s*-\s*Present)', r' <span class="date">\1</span>'),
+        # Month/year to present in brackets
+        (r'\[([A-Za-z]+\s+[0-9]{4}[-–][A-Za-z]+|[A-Za-z]+\s+[0-9]{4}[-–][0-9]{4})\]', r' <span class="date">\1</span>'),
+        # Dates in parentheses with colon
+        (r'\(([A-Za-z]+\s+[0-9]{4}\s*-\s*[A-Za-z]+\s+[0-9]{4}|[A-Za-z]+\s+[0-9]{4}\s*-\s*[A-Za-z]+|[A-Za-z]+\s+[0-9]{4}\s*-\s*[0-9]{4}|[A-Za-z]+\s+[0-9]{4}\s*-\s*Present)\):', r'<span class="date">\1</span>:'),
+        # Single year at end of line
+        (r'\|\s*([0-9]{4})\s*$', r' <span class="date">\1</span>'),
+        # Dates after dash
+        (r'–\s*\(([A-Za-z]+\s+[0-9]{4}[-–][A-Za-z]+\s+[0-9]{4}|[A-Za-z]+\s+[0-9]{4}[-–][A-Za-z]+|[A-Za-z]+\s+[0-9]{4}[-–][0-9]{4})\)', r'– <span class="date">\1</span>'),
+        # Standalone month/year at end of line
+        (r'(?<![A-Za-z])([A-Za-z]+\s+[0-9]{4})$', r'<span class="date">\1</span>'),
+        # Day-specific dates
+        (r'([A-Za-z]+\s+[0-9]{1,2},\s+[0-9]{4})$', r'<span class="date">\1</span>'),
+        # Quarter-based dates
+        (r'(Q[1-4]\s+[0-9]{4})$', r'<span class="date">\1</span>'),
+        # Academic years
+        (r'([0-9]{4}/[0-9]{4})$', r'<span class="date">\1</span>'),
+        # Seasonal references
+        (r'((Spring|Summer|Fall|Winter|Autumn)\s+[0-9]{4})$', r'<span class="date">\1</span>'),
+        # Month ranges within same year
+        (r'([A-Za-z]{3,}-[A-Za-z]{3,}\s+[0-9]{4})$', r'<span class="date">\1</span>'),
+        # Date ranges with "to"
+        (r'([0-9]{4}\s+to\s+[0-9]{4})$', r'<span class="date">\1</span>'),
+        # ISO dates
+        (r'([0-9]{4}-[0-9]{2}-[0-9]{2})$', r'<span class="date">\1</span>'),
+    ]
+    for pat, repl in inline_date_patterns:
+        md_text = re.sub(pat, repl, md_text, flags=re.MULTILINE)
 
     return md_text
 

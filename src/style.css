@@ -3,7 +3,7 @@
 }
 
 body {
-    font-family: "Times New Roman", Times, serif;
+    font-family: "Nimbus Roman No9 L", serif;
     font-size: 10px;
     line-height: 1.4;
     margin: 0.3cm;
@@ -11,13 +11,13 @@ body {
 }
 
 h1 {
-    font-size: 1.6em;
+    font-size: 2.0em;
     color: #007acc;
     margin-top: 0;
 }
 
 h2 {
-    font-size: 1.3em;
+    font-size: 1.2em;
     color: #007acc;
 }
 
