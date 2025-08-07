@@ -58,6 +58,12 @@
 
 ---
 
+## AWARDS
+- [2x Technical Excellence Award from TCS](https://www.linkedin.com/posts/realkarthiknair_tcsgems-al-automation-activity-7357009079946416128-TOAc) for outstanding contributions to AI projects | 2025  
+- [Bug Bounty Award from Google Buganizer Android 12/13](https://realkarthiknair.github.io/CVE-2022-20317.html) | 2021 
+
+---
+
 ## EDUCATION
 ### Indira Gandhi National Open University, New Delhi (January 2025 - Present)
 
@@ -66,12 +72,6 @@
 ### Vivekananda Institute of Professional Studies | Guru Gobind Singh Indraprastha University, New Delhi (July 2021 - June 2024)
 
 #### **Bachelor of Computer Applications (Data Science & Analytics)** |  9.2 CGPA
-
----
-
-## AWARDS
-- [2x Technical Excellence Award from TCS](https://www.linkedin.com/posts/realkarthiknair_tcsgems-al-automation-activity-7357009079946416128-TOAc) for outstanding contributions to AI projects | 2025  
-- [Bug Bounty Award from Google Buganizer Android 12/13](https://realkarthiknair.github.io/CVE-2022-20317.html) | 2021 
 
 ---
 
