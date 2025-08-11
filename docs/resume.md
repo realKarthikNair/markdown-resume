@@ -2,35 +2,40 @@
 
 ## ::New Delhi, India | [+91 96436\*\*\*\*\*](tel:+919 64366\*\*\*\*)::
 
-## ::[realkarthiknair@gmail.com](mailto:realkarthiknair@gmail.com) | [github.com/realKarthikNair](https://www.github.com/realKarthikNair) | [linkedin.com/in/realkarthiknair/](https://linkedin.com/in/realkarthiknair/)::
+### ::[realkarthiknair@gmail.com](mailto:realkarthiknair@gmail.com) | [github.com/realKarthikNair](https://www.github.com/realKarthikNair) | [linkedin.com/in/realkarthiknair/](https://linkedin.com/in/realkarthiknair/)::
 
 ## SKILLS
 
-* Programming and scripting languages (Python, C++, Bash)
-* Generative AI (Prompt Engineering, Large Language Models, LangChain, LangGraph, Retrieval-Augmented Generation)
-* Backend Development (FastAPI, Flask),  Database Management (SQL, Firestore), Data Engineering and Analytics
-* Machine Learning (Scikit-learn, TensorFlow, PyTorch), Natural Language Processing (spaCy, NLTK), Computer Vision (OpenCV)
-* Cloud Platforms (Azure, AWS, Vercel, Render), DevOps (CI/CD, Docker, Kubernetes, Jenkins), Version Control (Git), Linux (RHEL, Debian)
-* Data Visualisation (Matplotlib, Seaborn, Plotly), Data Processing (Pandas, NumPy), Web Scraping (BeautifulSoup, Scrapy)
-* Content Writing, Video Editing (DaVinci Resolve), Photography, Digital Marketing
+- Programming & Development: Python, C++, Bash, FastAPI, Flask, RESTful APIs
+
+- Generative AI : Prompt Engineering, Large Language Models (LLMs), LangChain, LangGraph, RAG, Multimodal Systems (Text, Voice)
+
+- Data Science: Pandas, NumPy, Nvidia MatX, Matplotlib, Seaborn, Plotly, Scikit-learn, TensorFlow, PyTorch, spaCy, NLTK, OpenCV
+
+- Cloud & Data Engineering: Google Cloud Platform (GCP), AWS, Azure, Docker, Kubernetes, CI/CD (GitHub Actions, Jenkins), Linux (RHEL, Debian), Data Pipelines, ETL/ELT, Apache Spark, Apache Beam, SQL, Firestore
+
+- Tools & Technologies: Git, BeautifulSoup, Scrapy, Selenium, GitHub, Jupyter, VS Code, WeasyPrint, FFmpeg, Google Gemini
+
+- Soft Skills: Client Communication, Technical Writing, Cross-functional Collaboration
 
 ---
 
 ## WORK EXPERIENCE
 ### **AI Engineer, {Tata Consultancy Services}** [Aug 2024–Present]
 
-#### {PoC Development and Production Transition}
+#### {PoC to Production Deployment}
 
-- Transitioned multiple AI and Data Engineering projects from **proof of concept to MVP and eventual production**, enhancing data processing and analysis capabilities for a major U.S. pharmaceutical client.
+- **Led the transition of 3 AI/Data Engineering projects** from PoC to production for a major U.S. pharmaceutical client, including a **data optimisation pipeline that boosted processing speed by 60%.** Enabled 200+ researchers to access real-time analytics with zero downtime.
 
 #### {AI Systems for Data Insights and Workflow Optimization}
 
-- Engineered an AI system that processes **pharmaceutical and clinical datasets**, optimises schemas for **LLMs**, and auto-generates custom analytics scripts. The system **reduced data analysis and visualisation efforts by 90%**, accelerating insights and supporting drug discovery. Developed **FastAPI endpoints** to integrate it into the client’s existing **SageMaker infrastructure**.
-
+- Engineered an AI system for **large pharma & clinical datasets** that generates **real-time code to produce graphs** and answer statistical queries using **LLM-optimised schemas** that **cut analysis time by 90%**. Integrated into the client’s SageMaker setup as FastAPI endpoints.
 
 - Built a conversational **Retrieval-Augmented Generation (RAG)** system using **LangChain** and LLMs over the client’s documentation and codebase, streamlining **information retrieval** for everyone involved.
 
-- **Developed a reusable and scalable Python package** to seamlessly **integrate AI capabilities**, including **multimodal support** and diverse LLMs, enabling rapid adoption of advanced AI features across current and future projects by multiple teams.
+- Assisted in the development of an **end-to-end transcription system** that uses **Azure OpenAI Whisper**, **FFmpeg**, and **GPT-4o** with **95%+ accuracy** for clinical audio and automated the conversion of speech to structured documents with real-time summarisation and reference extraction.
+
+- **Developed a reusable and scalable Python package** to seamlessly **integrate AI capabilities**, including multimodal support and diverse LLMs, enabling rapid adoption of advanced AI features across teams.
 
 #### {Automating Workbook Generation for Clinical Trials}
 
@@ -46,21 +51,16 @@
 
 #### {Personal Finance Tool} (July 2025 - Present)
 
-- Building an AI-powered personal finance tool that parses bank statements, auto-categorises expenses using Google Gemini, and visualises spending trends. Integrated **smart caching and regex-based heuristics** to **reduce inference costs over time**. Focuses on **sustainable AI** and data privacy by minimising data transfer and processing overhead.
+- Building a Generative AI (Gemini) assisted personal finance tool that parses bank statements, categorises expenses, and visualises spending trends. Integrated **smart caching and regex-based heuristics** to **reduce inference costs over time**. Focuses on **sustainable AI** and data privacy by minimising data transfer and processing overhead.
 
-#### {markdown-resume}
+#### {Markdown-resume}
 
 - Markdown-based resume generator using CSS and WeasyPrint, designed for customization, speed, and professional output. **This resume was created using it.**
-
-<!-- #### {SeniorSage (Jan 2024 - Present)}
-
-- WIP AI platform offering resume reviews, GitHub analysis, and roadmap suggestions for CS students. A customised ATS-friendly resume generator and course recommendation system are also in development. -->
 
 ---
 
 ## AWARDS
-- [2x Technical Excellence Award from TCS](https://www.linkedin.com/posts/realkarthiknair_tcsgems-al-automation-activity-7357009079946416128-TOAc) for outstanding contributions to AI projects | 2025  
-- [Bug Bounty Award from Google Buganizer Android 12/13](https://realkarthiknair.github.io/CVE-2022-20317.html) | 2021 
+- [2× TCS Technical Excellence Award](https://www.linkedin.com/posts/realkarthiknair_tcsgems-al-automation-activity-7357009079946416128-TOAc) – for impactful contributions to enterprise AI systems | 2025  
 
 ---
 
@@ -76,5 +76,4 @@
 ---
 
 ## LANGUAGES
-* Professional Proficiency: English, Hindi, Malayalam  
-* Limited Working Proficiency: Tamil
+* English, Hindi, Malayalam (Professional Proficiency), Tamil (Limited Working Proficiency)
