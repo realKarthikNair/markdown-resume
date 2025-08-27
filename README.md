@@ -46,9 +46,11 @@ pip install -r requirements.txt
 
 1. Open `docs/resume.md` in your favorite text editor (e.g., VSCode, Notepad, Vim).
 2. Update the content with your personal information, education, work experience, projects, skills, awards, and languages.
+
+> Note: I have introduced some custom Markdown syntax to enhance the formatting options. They are documented [here](./docs/markdown_basics.md) alongside standard Markdown syntax.
+
 3. Save the changes.
 
-> 💡 You might need to know Markdown syntax to customize the format. Read [this](./docs/markdown_basics.pdf) to learn it in 4 minutes. Custom markdown syntax is also documented.
 
 ### (optional) Edit CSS
 

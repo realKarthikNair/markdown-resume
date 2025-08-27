@@ -1,135 +1,106 @@
 @page {
-    margin: 0.8cm;
+    margin: 1cm;
 }
 
 body {
     font-family: "Nimbus Roman No9 L", serif;
-    font-size: 10px;
-    line-height: 1.4;
-    margin: 0.3cm;
+    font-size: 11px;
+    /* main body text, safe and readable */
+    line-height: 1.5;
+    /* more breathing room */
+    margin: 0.5cm;
     color: #333;
 }
 
+/* Name / Header */
 h1 {
-    font-size: 2.0em;
+    font-size: 18px;
+    /* strong name presence */
     color: #007acc;
     margin-top: 0;
+    font-weight: bold;
 }
 
+/* Section headers */
 h2 {
-    font-size: 1.2em;
+    font-size: 13px;
+    /* clear separation */
     color: #007acc;
+    font-weight: bold;
+    /* text-transform: uppercase; */
+    margin-top: 1.2em;
+    margin-bottom: 0.6em;
 }
 
+/* Sub-section headers */
 h3 {
-    font-size: 1.1em;
+    font-size: 12px;
     color: #444;
+    font-weight: 600;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
 }
 
 h4 {
-    font-size: 1.0em;
+    font-size: 11px;
     color: #222;
+    font-weight: 600;
+    margin-top: 0.8em;
+    margin-bottom: 0.4em;
+    position: relative;
 }
 
+/* Consistent line height */
 h1,
 h2,
 h3,
 h4 {
-    line-height: 1.2;
+    line-height: 1.3;
 }
 
-h2,
-h3,
-h4 {
-    margin-top: 1em;
-    margin-bottom: 0.6em;
-    font-weight: 500;
-}
-
+/* Paragraphs */
 p {
     margin: 0.5em 0;
     position: relative;
 }
 
-/* Date styling and positioning */
-.date {
-    float: right;
-    font-style: normal;
-    font-weight: normal;
-    color: #666;
-}
-
-p>em:last-child {
-    position: absolute;
-    right: 0;
-    font-style: normal;
-    color: #666;
-}
-
-p>strong+em {
-    position: absolute;
-    right: 0;
-    font-style: normal;
-    color: #666;
-}
-
-li em:last-child {
-    display: block;
-    text-align: right;
-    font-style: normal;
-    margin-top: -1.4em;
-    color: #666;
-}
-
-li strong+em {
-    display: block;
-    text-align: right;
-    font-style: normal;
-    margin-top: -1.4em;
-    color: #666;
-}
-
+/* Dates & metadata */
+.date,
+p>em:last-child,
+p>strong+em,
+li em:last-child,
+li strong+em,
 h4 em:last-child,
 h4 .date {
-    float: right;
+    font-size: 12px;
+    /* subtle, secondary info */
     font-style: normal;
-    font-weight: normal;
     color: #666;
+    float: right;
+    font-weight: normal;
 }
 
-h4 {
-    position: relative;
-}
-
-/* Center content */
-center {
-    text-align: center;
-}
-
+/* Lists */
 ul {
-    padding-left: 1.5em;
+    padding-left: 1.2em;
 }
 
 li {
-    margin-bottom: 0.3em;
+    margin-bottom: 0.4em;
     position: relative;
 }
 
-li strong+em+br {
-    display: block;
-    content: "";
-    margin-bottom: 0.5em;
-}
-
+/* Blockquotes (for nice highlights if used) */
 blockquote {
     border-left: 4px solid #007acc;
     background: #f2f9ff;
-    padding: 0.2em 0.6em;
-    margin: 0.4em 0;
+    padding: 0.4em 0.8em;
+    margin: 0.6em 0;
     color: #555;
-    font-size: 0.8em;
+    font-size: 10px;
 }
 
+/* Links */
 a {
     color: #007acc;
     text-decoration: none;
@@ -147,4 +118,9 @@ hr {
     border: none;
     border-top: 1px solid #ccc;
     margin: 1em 0;
+}
+
+/* Centered content (for header) */
+center {
+    text-align: center;
 }
