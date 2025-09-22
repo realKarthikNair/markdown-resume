@@ -23,9 +23,6 @@
 ---
 
 ## EDUCATION
-### Indira Gandhi National Open University, New Delhi ;January 2025 - Present;
-
-#### **Master of Computer Applications**
 
 ### Vivekananda Institute of Professional Studies | Guru Gobind Singh Indraprastha University, New Delhi ;July 2021 - June 2024;
 
@@ -36,9 +33,13 @@
 ## WORK EXPERIENCE
 ### **AI Engineer** ;Aug 2024–Present;
 {Tata Consultancy Services} - Noida, Uttar Pradesh
-#### PoC to Production Deployment
+#### Data Engineering Solutions 
 
 - **Led the transition of 3 AI/Data Engineering projects** from PoC to production for a major U.S. pharmaceutical client, including a **data optimisation pipeline that boosted processing speed by 60%.** Enabled 200+ researchers to access real-time analytics with zero downtime.
+
+#### Automating Workbook Generation for Clinical Trials
+
+- Designed algorithmic solutions using **openpyxl** to automate the creation of complex, interconnected workbooks, **improving data engineering efficiency and cutting manual effort by 95% (from ~5 minutes to under 15 seconds per workbook) with 100% accuracy**.
 
 #### AI Systems for Data Insights and Workflow Optimization
 
@@ -50,9 +51,6 @@
 
 - Developed a **reusable and scalable Python package** to seamlessly **integrate AI capabilities**, including multimodal support and diverse LLMs, enabling rapid adoption of advanced AI features across teams.
 
-#### Automating Workbook Generation for Clinical Trials
-
-- Designed algorithmic solutions using **openpyxl** to automate the creation of complex, interconnected workbooks, **improving data engineering efficiency and cutting manual effort by 95% (from ~5 minutes to under 15 seconds per workbook) with 100% accuracy**.
 
 #### R-to-Python Migration & API Development
 
@@ -61,6 +59,8 @@
 ---
 
 ## AWARDS
+- [Best Team Award](https://www.linkedin.com/feed/update/urn:li:activity:7373784171569340416/) - for major cost savings and efficiency improvements in AI solutions ;2025;
+
 - [2× TCS Technical Excellence Award](https://www.linkedin.com/posts/realkarthiknair_tcsgems-al-automation-activity-7357009079946416128-TOAc) – for impactful contributions to enterprise AI systems ;2025;  
 
 - [Bug Bounty Award from Google Buganizer Android 12/13](https://realkarthiknair.github.io/CVE-2022-20317.html)  ;2021; 
