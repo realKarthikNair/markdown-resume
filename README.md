@@ -36,6 +36,8 @@ You must have Python 3 and `markdown` and `weasyprint` packages installed.
 pip install -r requirements.txt
 ```
 
+> On Windows, if you see error(s), ignore it if you're still able to use the tool according to the usage instructions! 
+
 > 💡 On Linux WeasyPrint may require additional system libraries like `libpango`, `cairo`, and `gdk-pixbuf` depending on your OS.
 
 ---
