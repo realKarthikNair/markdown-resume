@@ -41,6 +41,10 @@
 
 - Designed algorithmic solutions using **openpyxl** to automate the creation of complex, interconnected workbooks, **improving data engineering efficiency and cutting manual effort by 95% (from ~5 minutes to under 15 seconds per workbook) with 100% accuracy**.
 
+#### Process Automation solutions 
+
+- **Automated impact analysis** across upstream, core, and downstream systems for a leading U.S. pharmaceutical client. **Developed Generative AI workflows** to identify system impacts and generate summary reports using data extracted from ServiceNow and Veeva QualityDocs. **Reverse-engineered complex DOCX structures** to enhance automation accuracy and efficiency.
+
 #### AI Systems for Data Insights and Workflow Optimization
 
 - Engineered an AI system for large pharma & clinical datasets that generates **real-time code to produce graphs** and answer statistical queries using **LLM-optimised schemas** that **cut analysis time by 90%**. Integrated into the client’s SageMaker setup as **FastAPI** endpoints.
